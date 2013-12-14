@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<game>
+	<informations>
+		<name>Pendu</name>
+		<description>Le classique jeu du pendu ! Trouvez vite le mot avant que...</description>
+		<author>Florent</author>
+		<version>1.0</version>
+		<date>20/11/2013</date>
+		<age>8+</age>
+		<category>Divers</category>
+	</informations>
+</game>

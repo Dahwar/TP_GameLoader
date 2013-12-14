@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<game>
+	<informations>
+		<name>Snake</name>
+		<description>Le classique jeu du Snake ! Croquez les pommes !</description>
+		<author>Florent</author>
+		<version>1.0</version>
+		<date>20/11/2013</date>
+		<age>8+</age>
+		<category>Divers</category>
+	</informations>
+</game>

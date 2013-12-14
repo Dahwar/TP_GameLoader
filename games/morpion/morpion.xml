@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<game>
+	<informations>
+		<name>Morpion</name>
+		<description>Le classique jeu du morpion ! Alignez 3 croix ou 3 ronds plus vite que votre adversaire pour remporter !</description>
+		<author>Florent</author>
+		<version>1.0</version>
+		<date>19/11/2013</date>
+		<age>6+</age>
+		<category>Divers</category>
+	</informations>
+</game>
