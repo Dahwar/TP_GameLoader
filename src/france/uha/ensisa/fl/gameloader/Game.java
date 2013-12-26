@@ -9,6 +9,7 @@ import java.util.HashMap;
  */
 public class Game {
     private String name;
+    private String namefull;
     private String description;
     private String author;
     private String version;
@@ -22,7 +23,11 @@ public class Game {
     public Game() {}
     
     public Game(HashMap<String, String> hm) {
-        this.name = hm.get("name");
+        if(hm.get("name").length() > 10)
+            this.name = hm.get("name").substring(0,10).concat("...");
+        else
+            this.name = hm.get("name");
+        this.namefull = hm.get("name");
         this.description = hm.get("description");
         this.author = hm.get("author");
         this.version = hm.get("version");
@@ -33,6 +38,10 @@ public class Game {
     
     public String getName() {
         return this.name;
+    }
+    
+    public String getNameFull() {
+        return this.namefull;
     }
     
     public String getDescription() {
@@ -68,7 +77,12 @@ public class Game {
     }
     
     public void setAll(HashMap<String, String> hm) {
-        this.name = hm.get("name");
+      
+        if(hm.get("name").length() > 10)
+            this.name = hm.get("name").substring(0,10).concat("...");
+        else
+            this.name = hm.get("name");
+        this.namefull = hm.get("name");
         this.description = hm.get("description");
         this.author = hm.get("author");
         this.version = hm.get("version");

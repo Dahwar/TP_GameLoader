@@ -231,7 +231,11 @@ public class GameLoader extends Application {
                         public void handle(ActionEvent event) {
                             
                             Text nameT = new Text(game.getName());
-                            Text descriptionT = new Text(game.getDescription());
+                            Text descriptionT;
+                            if(game.getName().equals(game.getNameFull()))
+                                descriptionT = new Text(game.getDescription());
+                            else
+                                descriptionT = new Text(game.getNameFull()+"\n\n"+game.getDescription());
                             Text authorT = new Text("Author : " + game.getAuthor());
                             Text ageT = new Text("Age : " + game.getAge());
                             Text categoryT = new Text("Category : " + game.getCategory());
@@ -274,12 +278,15 @@ public class GameLoader extends Application {
                             right.setBottom(bottom);
                             
                             ScrollPane centerScroll = new ScrollPane();
-                            centerScroll.setContent(descriptionT);
-                            centerScroll.setPrefWidth(460.0);
-                            centerScroll.setMaxWidth(460.0);
-                            centerScroll.setMinWidth(460.0);
+                            centerScroll.setPrefWidth(475.0);
+                            centerScroll.setMaxWidth(475.0);
+                            centerScroll.setMinWidth(475.0);
+                            
+                            BorderPane centerTextScrollPane = new BorderPane();
+                            centerTextScrollPane.setCenter(descriptionT);
+                            centerScroll.setContent(centerTextScrollPane);
+                            BorderPane.setMargin(descriptionT, new Insets(0.0, 0.0, 0.0, 10.0));
                             BorderPane.setMargin(centerScroll, new Insets(10.0, 0.0, 10.0, 0.0));
-                            centerScroll.getStyleClass().add("centerScrollPane");
                             right.setCenter(centerScroll);
 
                             nameT.getStyleClass().add("gameName");
