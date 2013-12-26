@@ -78,8 +78,8 @@ public class Game {
     
     public void setAll(HashMap<String, String> hm) {
       
-        if(hm.get("name").length() > 10)
-            this.name = hm.get("name").substring(0,10).concat("...");
+        if(hm.get("name").length() > 9)
+            this.name = hm.get("name").substring(0,9).concat("...");
         else
             this.name = hm.get("name");
         this.namefull = hm.get("name");
