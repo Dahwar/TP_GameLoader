@@ -1,0 +1,82 @@
+.gameName{
+    -fx-font-family: "Freestyle Script";
+    -fx-font-size: 150;
+    -fx-fill: white;
+    -fx-effect: dropshadow(one-pass-box, white, 15, 0.2, 0, 0);
+}
+
+.gameDescription{
+    -fx-font-family: "Freestyle Script";
+    -fx-font-size: 45;
+    -fx-fill: white;
+    -fx-effect: dropshadow(one-pass-box, black, 15, 0.2, 0, 0);
+}
+
+.gamePlay{
+    -fx-font-family: Calibri;
+    -fx-font-size: 13;
+    -fx-fill: white;
+}
+
+.gameDetails{
+    -fx-font-family: Calibri;
+    -fx-font-size: 13;
+    -fx-fill: white;
+}
+
+.button{
+    -fx-font: 15 arial;
+    -fx-text-fill: white;
+    -fx-background-color: #2C57AA;
+    -fx-label-padding: 5;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-opacity: 1;
+}
+
+.button:hover{
+    -fx-font: 15 arial;
+    -fx-background-color: #2870FF;
+    -fx-label-padding: 5;
+    -fx-effect: dropshadow(one-pass-box, white, 20, 0.2, 0, 0);
+    -fx-opacity: 1;
+}
+
+.buttonPlay{
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-opacity: 1;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .track-background{
+    -fx-opacity: 0;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: white;
+    -fx-opacity: 0.1;
+}
+
+.scroll-bar .increment-button {
+  -fx-opacity: 0;
+}
+
+.scroll-bar .decrement-button {
+  -fx-opacity: 0;
+}
+
+.scroll-bar:vertical .thumb {
+  -fx-opacity: 0.8;
+  -fx-background-color: #2870FF;
+}
+.scroll-bar:vertical:pressed .thumb {
+    -fx-effect: dropshadow(one-pass-box, white, 20, 0.2, 0, 0);
+}
