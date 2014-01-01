@@ -59,7 +59,7 @@ public class GameLoader extends Application {
         AnchorPane root = new AnchorPane();
         Scene scene = new Scene(root, WIDTH, HEIGHT);
     
-        // Background effect
+        //Background effect
         Timeline animation;
         Group backgroundEffect = new Group();
         Group layer1 = new Group();
@@ -192,7 +192,7 @@ public class GameLoader extends Application {
         
         // Initialisation
         Text title = new Text("GameLoader");
-        Text credits = new Text("Credits : Copyright 2013 LACROIX Florent. Tous droits réservés.");
+        Text credits = new Text("Copyright 2014 LACROIX Florent. Tous droits réservés.");
         credits.getStyleClass().add("gameDetails");
         Text description = new Text("Bienvenue dans notre Game Loader !\n"
                 + "Pour accéder à nos différents jeux, il suffit d'utiliser le menu à votre gauche !"
