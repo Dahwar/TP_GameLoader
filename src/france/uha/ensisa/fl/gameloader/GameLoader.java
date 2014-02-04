@@ -157,7 +157,8 @@ public class GameLoader extends Application {
         bp.setLeft(sp);
         bp.setCenter(right);
         
-        //Resources 
+        //Resources
+        Image icon = new Image(GameLoader.class.getResource("images/icon.png").toString());
         Image imagePlay = new Image(GameLoader.class.getResource("images/buttonPlayBlue.png").toString());
         final ImageView iv = new ImageView(imagePlay);
         iv.setFitWidth(40.0);
@@ -324,7 +325,9 @@ public class GameLoader extends Application {
         
         sp.setPrefWidth(listGameBtn.getWidth()+15.0);
         sp.setMaxWidth(listGameBtn.getWidth()+15.0);
-        sp.setMinWidth(listGameBtn.getWidth()+15.0);        
+        sp.setMinWidth(listGameBtn.getWidth()+15.0);   
+        
+        primaryStage.getIcons().add(icon);
     }
 
 public static void main(String[] args) {
